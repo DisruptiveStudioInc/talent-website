@@ -11,7 +11,7 @@ return [
     'team' => 'Team',
     'solutions' => 'Solutions',
     'services' => 'Services',
-    'ecosystem' => 'Ecosystem',
+    'challenges' => 'Challenges',
     'disruptive_ip' => 'Our IP',
     'case_studies' => 'Case Studies',
     'certifications' => 'Certifications',
@@ -61,112 +61,107 @@ return [
 
   // Home page
   'home' => [
-    'title' => 'Disruptive Studio',
-    'description' => 'Comprehensive solution for companies and multilevel networks.',
+    'title' => 'Disruptive Talent',
+    'description' => 'Comprehensive human resources service solution for businesses.',
     'hero' => [
       'slide1' => [
-        'title' => 'Grow',
-        'text' => 'Boost your network, conquer new markets, scale without limits.'
+      'title' => 'Recruitment',
+      'text' => 'We identify, evaluate, and present highly qualified candidates so you can make informed decisions and reduce hiring mistakes.'
       ],
       'slide2' => [
-        'title' => 'Control',
-        'text' => 'Your network under control, your time focused on growth.'
+      'title' => 'Integration',
+      'text' => 'We integrate the employee from day one, define clear responsibilities, and support their growth to accelerate results.'
       ],
       'slide3' => [
-        'title' => 'Redefine',
-        'text' => 'Reinvent your multilevel: innovation, clarity, and progress.'
+      'title' => 'Support',
+      'text' => 'We provide continuous support to staff, resolving operational and human issues to free up the founder\'s time.'
       ],
       'slide4' => [
-        'title' => 'Technology',
-        'text' => 'Automate, simplify, and expand your network with technology built for MLM.'
+      'title' => 'Performance',
+      'text' => 'We measure results, detect key talent and areas for improvement to optimize productivity and make objective decisions.'
+      ],
+      'slide5' => [
+      'title' => 'Compensation',
+      'text' => 'We design competitive salary structures and growth plans that reduce turnover and prevent internal conflicts.'
+      ],
+      'slide6' => [
+      'title' => 'Wellness',
+      'text' => 'We implement actions that strengthen emotional stability, commitment, and team permanence.'
+      ],
+      'slide7' => [
+      'title' => 'Accompaniment',
+      'text' => 'We detect emotional risks and channel timely professional attention to prevent crises and absenteeism.'
+      ],
+      'slide8' => [
+      'title' => 'Consulting',
+      'text' => 'We advise on leadership, decision-making, and people management to strengthen the management structure.'
+      ],
+      'slide9' => [
+      'title' => 'Offboarding',
+      'text' => 'We manage exit processes with control, proper documentation, and legal care, protecting the company.'
+      ],
+      'slide10' => [
+      'title' => 'Labor Law',
+      'text' => 'We prevent and handle labor conflicts with specialized legal support, reducing risks and costs for the business.'
       ]
     ],
-    'discover' => 'Discover Studio',
+    'discover' => 'Discover Talent',
     'discover_list' => [
       'item1' => [
-        'title' => 'Smart ecosystem',
-        'text' => 'An ecosystem where each service boosts the other, creating an unstoppable network.'
+      'title' => 'People first',
+      'text' => 'We put people at the center. We understand what it means to be an entrepreneur and leader, because we are too.'
       ],
       'item2' => [
-        'title' => 'Digital intelligence',
-        'text' => "It's not just software, it's a digital mind that evolves with you and your vision."
+      'title' => 'Strategy with numbers',
+      'text' => 'Every HR solution is designed to save costs, accelerate timelines, and deliver measurable results that impact the business.'
       ],
       'item3' => [
-        'title' => 'Comprehensive growth',
-        'text' => 'Everything your network needs: blockchain, software, payments, creativity, and talent in one single ecosystem.'
+      'title' => 'Disruptive by nature',
+      'text' => 'We combine HR expertise with artificial intelligence and innovative processes to solve in weeks what others take months.'
       ],
       'item4' => [
-        'title' => 'Total impact',
-        'text' => 'A borderless multilevel: digitalized, global, and constantly expanding.'
+      'title' => 'Social impact',
+      'text' => 'We allocate a percentage of our profits to programs that train IT talent in remote communities. This way, we enable new opportunities for more people to generate income without migrating from their localities.'
       ]
     ],
-    'builder' => "We don't just build systems",
-    'builder_big' => 'We create the future',
-    'builder_text' => 'Strategy, innovation, and experiences that transform your business',
+    'builder' => 'Recruitment, daily care, performance, compensation, wellness, and legal support.',
+    'builder_big' => 'No limits',
+    'builder_text' => 'Your company doesn\'t need more people. It needs order.',
     'about' => [
       'title' => 'About',
-      'text' => "At Disruptive, we don't follow trends—we create them. We design a technological ecosystem that integrates software, blockchain, payments, marketing, talent, and creativity so your project can evolve with strength, clarity, and a global vision.",
-      'big' => "Here we don't talk about limits, we talk about real expansion."
+      'text' => 'At Disruptive Talent we concentrate years of experience into a proven and repeatable system. We take full charge of Human Resources so you can stop managing it and focus on growing, selling, and leading, with the certainty that the area is under control.',
+      'big' => 'Talent not only builds companies, it also transforms realities.'
     ],
-    'technology' => 'Technology that breaks boundaries',
+    'technology' => '10x10x10÷10',
+    'technology_text' => '10 common problems, with their 10 solutions, solved in 10 services and at 10% of the cost. NO LIMITS',
     'tech_list' => [
       'item1' => [
-        'title' => 'Digital power',
-        'text' => "Blockchain, software, and mass payments designed so your multilevel business doesn't depend on improvisation."
+        'title' => 'Clear operation',
+        'text' => 'Talent works better when every stage has order, method, and follow-up.'
       ],
       'item2' => [
-        'title' => 'Global vision',
-        'text' => "We don't think small: we design systems that grow with you and adapt to your global vision."
+        'title' => 'Responsive system',
+        'text' => 'Defined processes that support team growth at every stage.'
       ],
       'item3' => [
-        'title' => 'Unlimited creativity',
-        'text' => 'We integrate creativity, education, and technology so your network evolves without limits.'
+        'title' => 'Growth with order',
+        'text' => 'We integrate talent, processes, and follow-up so the team advances with clarity.'
       ]
     ],
-    'we_are' => "We are the creators of the future, <span class='text-brand-100'>now</span>",
+    'we_are' => "It's not just recruitment, it's a comprehensive solution",
     'team' => 'Team Disruptive',
-    'team_big' => 'Management team',
+    'team_big' => 'Management Team',
     'team_jobs' => [
       'ceo' => 'Chief Executive Officer (CEO)',
       'cto' => 'Chief Technology Officer (CTO)',
-      'cfo' => 'Chief Financial Officer (CFO)',
-      'cpco' => 'Chief People & Culture Officer (CPCO)',
       'cmo' => 'Chief Marketing Officer (CMO)',
-      'csgo' => 'Chief Strategy & Growth Officer (CSO)',
-      'software_arch_lead' => 'Software Architect Lead',
-      'cloud_infra_specialist' => 'Cloud Infrastructure Specialist',
-      'head_quality_engineering' => 'Head of Quality Engineering',
-      'lead_qa_architect' => 'Lead QA Automation Architect',
-      'perf_security_tester' => 'Performance & Security Tester',
-      'head_engineering_excellence' => 'Head of Engineering Excellence',
-      'ai_integrations_specialist' => 'Automation & AI Integrations Specialist',
-      'head_delivery_pmo' => 'Head of Delivery & PMO',
-      'code_quality_architect' => 'Code Quality Architect',
-      'fullstack_strategy_lead' => 'Fullstack Strategy Lead',
-      'perf_optimization_lead' => 'Performance Optimization Lead',
-      'blockchain_architect' => 'Blockchain Solutions Architect',
-      'lead_fullstack_architect' => 'Lead Fullstack Architect',
-      'crypto_infra_architect' => 'Crypto Infrastructure Architect',
-      'learning_experience_architect' => 'Learning Experience Architect',
-      'business_reengineering_lead' => 'Business Process Reengineering Lead',
-      'learning_innovation_specialist' => 'Learning Innovation Specialist',
-      'customer_insights_specialist' => 'Customer Insights & Innovation Specialist',
-      'customer_experience_specialist' => 'Customer Experience Innovation Specialist',
-      'head_human_capital' => 'Head of Human Capital Strategy',
-      'creative_strategy_director' => 'Creative Strategy Director',
-      'art_direction_lead' => 'Art Direction Lead',
-      'digital_design_lead' => 'Digital Design Lead',
-      'brand_identity_designer' => 'Brand Identity Designer',
-      'creative_content_strategist' => 'Creative Content Strategist',
-      'financial_operations_manager' => 'Financial Operations Manager',
-      'financial_performance_manager' => 'Financial Performance Manager',
-      'qa_strategy_lead' => 'Quality Assurance Strategy Lead',
-      'client_onboarding_experience_director' => 'Client Onboarding & Experience Director',
-      'head_logistics' => 'Head of Logistics',
-      'logistics_operations_lead' => 'Logistics Operations Lead',
-      'sales_strategy_lead' => 'Sales Strategy Lead',
-      'legal_strategy_lead' => 'Legal Strategy Lead',
-      'content_production_lead' => 'Content Production Lead'
+      'pmo' => 'PMO',
+      'chairman' => 'Chairman',
+      'hr_operations_lead' => 'HR Operations Lead',
+      'hr_tech_lead' => 'HR Tech Lead',
+      'client_manaager' => 'Client Success Manager',
+      'legal_advisor' => 'Legal Advisor',
+      'logistics_operations' => 'Logistics / Operations Support'
     ],
     'team_description' => [
       'daniel' => "Defines the strategic vision and leads the company's global expansion.",
@@ -216,53 +211,64 @@ return [
       'list' => [
         'item1' => [
           'feature' => 'years',
-          'text' => 'Launching projects where quality is the top priority.'
+          'text' => 'Proven experience in Human Resources.'
         ],
         'item2' => [
-          'feature' => 'countries',
-          'text' => 'Present in the commitment of Disruptive Studio and our commercial partners.'
+          'feature' => 'problems',
+          'text' => 'Solved and documented.'
         ],
         'item3' => [
           'feature' => 'collaborators',
-          'text' => 'Present all over the world, merging their talents.'
+          'text' => 'Efficiently managed.'
         ],
         'item4' => [
-          'number' => '+300K',
+          'number' => '+300k',
           'feature' => 'hours',
-          'text' => 'Dedicated to project planning, development, and strategy.'
+          'text' => 'Dedicated to planning, development, and strategy projects.'
         ],
         'item5' => [
           'feature' => 'clients',
-          'text' => 'Served with satisfactory results to offer personalized support.'
+          'text' => 'Served with satisfactory results.'
         ],
         'item6' => [
           'number' => '+1 billion',
           'feature' => 'dollars',
-          'text' => 'Sold by our clients thanks to our exclusive technology.'
+          'text' => 'Saved for clients thanks to our efforts.'
         ]
       ]
     ],
     'ecosystem' => [
-      'title' => 'Disruptive Ecosystem',
+      'title' => 'Common Problems',
       'text' => "Our ecosystem doesn't just solve needs—it opens paths. It integrates what's essential to scale, connects what once seemed dispersed, and turns any organization into a global powerhouse.",
-      'circle' => "One ecosystem, <span class='font-bold'>many skills</span>",
+      'circle' => "Common businessman",
       'big' => 'Explore how each area can transform your business.',
-      'verticals' => [
-        'studio' => 'Boost your business with technology, automation, and digital marketing that fuel corporate growth.',
-        'mindz' => 'Discover the future with blockchain solutions that drive security, transparency, and sustainable digital growth.',
-        'crea' => 'Transform your business with strategic design that communicates, connects, and drives results with visual impact.',
-        'exchange' => 'Unleash the power of open trade with liquidity, security, and unprecedented digital efficiency.',
-        'law' => 'Simplify complexity with digital legal solutions that protect, streamline, and ensure compliance.',
-        'payments' => 'We transform transactions with secure, accessible digital payment solutions focused on global growth.',
-        'talent' => "Unleash your team's potential with solutions that foster development and business growth.",
-        'corpsyte' => 'Take the first step with tailored solutions that drive your vision and business growth.'
+      'problems' => [
+        'item1' => 'Poor hiring',
+        'item2' => 'Low performance',
+        'item3' => 'Bad work environment',
+        'item4' => 'Emotional burnout',
+        'item5' => 'Lack of retention',
+        'item6' => 'Poorly executed dismissal',
+        'item7' => 'Labor lawsuits',
       ]
     ],
     'our_services' => [
       'first' => 'Our',
       'second' => 'solutions'
     ],
-    'services_text' => "It's not just software, it's a digital mind that evolves with you and your vision.",
+    'services_text' => "Comprehensive Human Resources management in a single service: recruitment, onboarding, daily support, performance, compensation, well-being, labor relations, and preventive legal support. No operational limits, no hidden costs, and full control for the entrepreneur.",
+    'service_description' => [
+      'recruitment' => 'We identify, evaluate, and present highly qualified candidates so you can make informed decisions and reduce hiring errors.',
+      'onboarding' => 'We integrate the employee from day one, define clear responsibilities, and support their growth to accelerate results.',
+      'attention' => 'We provide continuous support to staff, resolving operational and human issues to free up the founder’s time.',
+      'evaluation' => 'We measure results, identify key talent and areas for improvement to optimize productivity and make objective decisions.',
+      'salaries' => 'We design competitive salary structures and growth plans that reduce turnover and prevent internal conflicts.',
+      'wellbeing' => 'We implement actions that strengthen emotional stability, commitment, and team retention.',
+      'psychological' => 'We detect emotional risks and channel timely professional attention to prevent crises and absenteeism.',
+      'consulting' => 'We advise on leadership, decision-making, and people management to strengthen the management structure.',
+      'relations' => 'We manage exit processes with control, proper documentation, and legal care, protecting the company.',
+      'law' => 'We prevent and address labor conflicts with specialized legal support, reducing risks and costs for the business.',
+    ],
     'ip' => [
       'title' => 'Disruptive IP',
       'text' => 'We create unique digital assets that redefine how networks operate in the new era.',

@@ -62,7 +62,7 @@ function split_array_in_quarters(array $array): array {
 /**
  * Generate URL for a route in the current or specified language
  */
-function route(string $routeName, string $lang, string $defaultLang = 'en', array $params = []): string
+function route(string $routeName, string $lang, string $defaultLang = 'es', array $params = []): string
 {
   static $routes = null;
 
@@ -90,7 +90,7 @@ function route(string $routeName, string $lang, string $defaultLang = 'en', arra
 /**
  * Generate URL for a service in the current or specified language
  */
-function serviceRoute(string $serviceSlug, string $lang, string $defaultLang = 'en'): string
+function serviceRoute(string $serviceSlug, string $lang, string $defaultLang = 'es'): string
 {
 
   if ($lang === $defaultLang) {
@@ -168,33 +168,7 @@ function getServiceSubcategoryName(string $lang): array{
 }
 
 function getNavigationMenu(string $lang, callable $trans): array {
-  $subcategoryLabels = require __DIR__ . '/../config/subcategories.php';
-  $servicesGrouped = \App\Models\Service::getServicesGroupedBySubcategory($lang);
-  $subSolutions = [];
-  foreach($servicesGrouped as $subcategory => $items){
-    $subcatName = $subcategoryLabels[$subcategory][$lang] ?? $subcategory;
-    $subcat = [
-      'name' => $subcatName,
-      'list' => []
-    ];
-    foreach($items as $item){
-      $subcat['list'][] = [
-        'label' => $item['meta']['meta_title'],
-        'url' => serviceRoute($item['meta']['slug'], $lang)
-      ];
-    }
-    array_push($subSolutions, $subcat);
-  }
-  // $partReferral = \App\Models\Service::getBySubcategory('referral-marketing', $lang);
-  // $partHr = \App\Models\Service::getBySubcategory('hr', $lang);
-  // $partCreative = \App\Models\Service::getBySubcategory('creative-services', $lang);
-  // $subSolutions = array_values(array_merge(
-  //   is_array($partReferral) ? $partReferral : [],
-  //   is_array($partCreative) ? $partCreative : [],
-  //   is_array($partHr) ? $partHr : [],
-  // ));
-  $subEcosystem = \App\Models\Service::getByCategory('ecosystem', $lang);
-  $subIps = \App\Models\Service::getNavIps($lang);
+  $subSolutions = \App\Models\Service::getAll($lang);
   return [
     [
       'label' => $trans('nav.about'),
@@ -215,32 +189,24 @@ function getNavigationMenu(string $lang, callable $trans): array {
       'isMegamenu' => false
     ],
     [
-      'label' => $trans('nav.ecosystem'),
-      'url' => route('home', $lang).'#ecosystem',
+      'label' => $trans('nav.challenges'),
+      'url' => route('home', $lang).'#challenges',
       'hasSubmenu' => false,
       'isMegamenu' => false,
-      // 'submenu' => $subEcosystem,
     ],
     [
       'label' => $trans('nav.solutions'),
-      // 'url' => route('home', $lang).'#solutions',
-      'hasSubmenu' => true,
-      'isMegamenu' => true,
-      'submenu' => $subSolutions,
-    ],
-    [
-      'label' => $trans('nav.disruptive_ip'),
-      'url' => route('home', $lang).'#our-ip',
+      'url' => route('home', $lang).'#solutions',
       'hasSubmenu' => false,
       'isMegamenu' => false,
-      'submenu' => $subIps,
+      'submenu' => $subSolutions,
     ],
-    [
-      'label' => $trans('nav.case_studies'),
-      'url' => route('home', $lang).'#case_studies',
-      'hasSubmenu' => false,
-      'isMegamenu' => false
-    ],
+    // [
+    //   'label' => $trans('nav.case_studies'),
+    //   'url' => route('home', $lang).'#case_studies',
+    //   'hasSubmenu' => false,
+    //   'isMegamenu' => false
+    // ],
     [
       'label' => $trans('nav.certifications'),
       'url' => route('home', $lang).'#certifications',

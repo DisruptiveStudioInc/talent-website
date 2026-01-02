@@ -3,435 +3,16 @@
 use App\Models\Language;
 
 return [
-  // SERVICES CATEGORY - Blockchain subcategory
-  'contratos-inteligentes' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'blockchain',
-    'icon' => 'contracts-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'contratos-inteligentes',
-    'es' => [
-      'slug' => 'contratos-inteligentes',
-      'meta_title' => 'Contratos inteligentes',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'smart-contracts',
-      'meta_title' => 'Smart Contracts',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'aplicaciones-web3' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'blockchain',
-    'icon' => 'web3-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'aplicaciones-web3',
-    'es' => [
-      'slug' => 'aplicaciones-web3',
-      'meta_title' => 'Aplicaciones web3',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'web3-applications',
-      'meta_title' => 'Web3 Applications',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'bases-datos-seguras' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'blockchain',
-    'icon' => 'dbsecure-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'bases-datos-seguras',
-    'es' => [
-      'slug' => 'bases-de-datos-seguras',
-      'meta_title' => 'Bases de datos seguras',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'secure-databases',
-      'meta_title' => 'Secure Databases',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'tokenizacion-proyectos' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'blockchain',
-    'icon' => 'tokenization-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'tokenizacion-proyectos',
-    'es' => [
-      'slug' => 'tokenizacion-de-proyectos',
-      'meta_title' => 'Tokenización de proyectos',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'projects-tokenization',
-      'meta_title' => 'Projects Tokenization',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  // SERVICES CATEGORY - Custom Software subcategory
-  'aplicaciones-moviles' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'custom-software',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'aplicaciones-moviles',
-    'es' => [
-      'slug' => 'aplicaciones-moviles',
-      'meta_title' => 'Aplicaciones móviles',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'mobile-applications',
-      'meta_title' => 'Mobile Applications',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'aplicaciones-web' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'custom-software',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'aplicaciones-web',
-    'es' => [
-      'slug' => 'aplicaciones-web',
-      'meta_title' => 'Aplicaciones web',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'web-applications',
-      'meta_title' => 'Web Applications',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  // 'aplicaciones-hibridas' => [
-  //   'category' => 'services',
-  //   'subcategory' => 'custom-software',
-  //   'template' => 'service-type-1',
-  //   'content_file' => 'aplicaciones-hibridas',
-  //   'es' => [
-  //     'slug' => 'aplicaciones-hibridas',
-  //     'meta_title' => 'Aplicaciones híbridas',
-  //     'meta_description' => 'Descripción SEO',
-  //   ],
-  //   'en' => [
-  //     'slug' => 'hybrid-applications',
-  //     'meta_title' => 'Hybrid Applications',
-  //     'meta_description' => 'SEO description',
-  //   ],
-  // ],
-
-  'aplicaciones-multitenant' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'custom-software',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'aplicaciones-multitenant',
-    'es' => [
-      'slug' => 'aplicaciones-multitenant',
-      'meta_title' => 'Aplicaciones Multi-tenant',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'multitenant-applications',
-      'meta_title' => 'Multitenant Applications',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  // SERVICES CATEGORY - Payment Processing subcategory
-  'procesamiento-criptomonedas' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'payment-processing',
-    'icon' => 'cryptoprocess-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'procesamiento-criptomonedas',
-    'es' => [
-      'slug' => 'procesamiento-criptomonedas',
-      'meta_title' => 'Procesamiento de criptomonedas',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'cryptocurrency-processing',
-      'meta_title' => 'Cryptocurrency Processing',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'pagos-masivos' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'payment-processing',
-    'icon' => 'payment-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'pagos-masivos',
-    'es' => [
-      'slug' => 'pagos-masivos',
-      'meta_title' => 'Pagos masivos',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'massive-payments',
-      'meta_title' => 'Massive payments',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'cripto-fiat' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'payment-processing',
-    'icon' => 'crypto-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'cripto-fiat',
-    'es' => [
-      'slug' => 'cripto-fiat',
-      'meta_title' => 'Cripto/Fiat',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'crypto-fiat',
-      'meta_title' => 'Crypto/Fiat',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  // SERVICES CATEGORY - Referral Marketing subcategory
-  'mlm-software' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'referral-marketing',
-    'icon' => 'mlm-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'mlm-software',
-    'es' => [
-      'slug' => 'mlm-software',
-      'meta_title' => 'MLM Software',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'mlm-software',
-      'meta_title' => 'MLM Software',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'ecommerce' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'referral-marketing',
-    'icon' => 'ecommerce-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'ecommerce',
-    'es' => [
-      'slug' => 'ecommerce',
-      'meta_title' => 'E-Commerce',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'ecommerce',
-      'meta_title' => 'E-Commerce',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'elearning' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'referral-marketing',
-    'icon' => 'elearning-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'elearning',
-    'es' => [
-      'slug' => 'elearning',
-      'meta_title' => 'E-Learning',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'elearning',
-      'meta_title' => 'E-Learning',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'financial' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'referral-marketing',
-    'icon' => 'financial-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'financial',
-    'es' => [
-      'slug' => 'financial',
-      'meta_title' => 'Financial',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'financial',
-      'meta_title' => 'Financial',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  // SERVICES CATEGORY - Creative Services subcategory
-  'ui-ux' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'creative-services',
-    'icon' => 'ux-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'ui-ux',
-    'es' => [
-      'slug' => 'ui-ux',
-      'meta_title' => 'UI/UX',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'ui-ux',
-      'meta_title' => 'UI/UX',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'graphic-design' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'creative-services',
-    'icon' => 'graphic-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'graphic-design',
-    'es' => [
-      'slug' => 'diseno-grafico',
-      'meta_title' => 'Diseño gráfico',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'graphic-design',
-      'meta_title' => 'Graphic Design',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'web-design' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'creative-services',
-    'icon' => 'web-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'web-design',
-    'es' => [
-      'slug' => 'diseno-web',
-      'meta_title' => 'Diseño web',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'web-design',
-      'meta_title' => 'Web Design',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'multimedia' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'creative-services',
-    'icon' => 'multimedia-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'multimedia',
-    'es' => [
-      'slug' => 'multimedia',
-      'meta_title' => 'Multimedia',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'multimedia',
-      'meta_title' => 'Multimedia',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  // SERVICES CATEGORY - HR subcategory
-  'talento-captacion' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'hr',
-    'icon' => 'talent-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'talento-captacion',
-    'es' => [
-      'slug' => 'talento-y-captacion',
-      'meta_title' => 'Talento y captación',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'talent-acquisition',
-      'meta_title' => 'Talent Acquisition',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'formacion-desarrollo' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'hr',
-    'icon' => 'formacion-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'formacion-desarrollo',
-    'es' => [
-      'slug' => 'formacion-y-desarrollo',
-      'meta_title' => 'Formación y desarrollo',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'training-and-development',
-      'meta_title' => 'Training and Development',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'gestion-talento' => [
-    'isActive' => true,
-    'category' => 'services',
-    'subcategory' => 'hr',
-    'icon' => 'gestion-service-main',
-    'template' => 'service-type-1',
-    'content_file' => 'gestion-talento',
-    'es' => [
-      'slug' => 'gestion-del-talento',
-      'meta_title' => 'Gestión del talento',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'talent-management',
-      'meta_title' => 'Talent Management',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
   'recruitment' => [
     'isActive' => true,
+    'hasCard' => true,
     'category' => 'services',
     'subcategory' => 'hr',
-    'icon' => 'reclutamiento-service-main',
+    'icon' => 'contracts-service-main',
+    'image' => 'reclutamiento.webp',
+    'home_description' => Language::trans('home.service_description.recruitment'),
     'template' => 'service-type-1',
-    'content_file' => 'recruitment',
+    'content_file' => 'contratos-inteligentes',
     'es' => [
       'slug' => 'reclutamiento',
       'meta_title' => 'Reclutamiento',
@@ -444,520 +25,195 @@ return [
     ],
   ],
 
-  // SERVICES CATEGORY - Manufacturing subcategory
-  'supplements' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'manufacturing',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'supplements',
-    'es' => [
-      'slug' => 'servicios-integrales-en-suplementos',
-      'meta_title' => 'Servicios integrales en suplementos',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'integral-services-in-supplements',
-      'meta_title' => 'Integral Services in Supplements',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'package-design' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'manufacturing',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'package-design',
-    'es' => [
-      'slug' => 'diseno-de-empaque',
-      'meta_title' => 'Diseño de empaque',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'package-design',
-      'meta_title' => 'Package Design',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  // SERVICES CATEGORY - Customer support subcategory
-  'client-support' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'customer-support',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'client-support',
-    'es' => [
-      'slug' => 'atencion-y-soporte-al-cliente',
-      'meta_title' => 'Atención y soporte al cliente',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'client-support',
-      'meta_title' => 'Client Support',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'case-management' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'customer-support',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'case-management',
-    'es' => [
-      'slug' => 'gestion-de-casos-y-solicitudes',
-      'meta_title' => 'Gestión de casos y solicitudes',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'case-and-request-management',
-      'meta_title' => 'Case and Request Management',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'support-training' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'customer-support',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'support-training',
-    'es' => [
-      'slug' => 'implementacion-y-capacitacion-de-equipos',
-      'meta_title' => 'Implementación y capacitación de equipos',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'support-training',
-      'meta_title' => 'Support Training',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  // SERVICES CATEGORY - legal subcategory
-  'legal-financial' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'legal-services',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'legal-financial',
-    'es' => [
-      'slug' => 'derecho-corporativo-y-financiero',
-      'meta_title' => 'Derecho corporativo y financiero',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'corporate-and-financial-law',
-      'meta_title' => 'Corporate and Financial Law',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'legal-realestate' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'legal-services',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'legal-realestate',
-    'es' => [
-      'slug' => 'derecho-inmobiliario-y-construccion',
-      'meta_title' => 'Derecho inmobiliario y construcción',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'real-estate-and-construction-law',
-      'meta_title' => 'Real Estate and Construction Law',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'intellectual-property' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'legal-services',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'intellectual-property',
-    'es' => [
-      'slug' => 'propiedad-intelectual-y-tecnologia',
-      'meta_title' => 'Propiedad intelectual y tecnología',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'intellectual-property-and-technology',
-      'meta_title' => 'Intellectual Property and Technology',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'litigation' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'legal-services',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'litigation',
-    'es' => [
-      'slug' => 'litigio',
-      'meta_title' => 'Litigio',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'litigation',
-      'meta_title' => 'Litigation',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  // SERVICES CATEGORY - logistics subcategory
-  'storage-inventory' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'logistics',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'storage-inventory',
-    'es' => [
-      'slug' => 'almacenaje-e-inventarios',
-      'meta_title' => 'Almacenaje e inventarios',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'storage-and-inventory',
-      'meta_title' => 'Storage and Inventory',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'package-fulfillment' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'logistics',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'package-fulfillment',
-    'es' => [
-      'slug' => 'empaque-y-fulfillment',
-      'meta_title' => 'Empaque y fulfillment',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'package-fulfillment',
-      'meta_title' => 'Package Fulfillment',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'shipment-distribution' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'logistics',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'shipment-distribution',
-    'es' => [
-      'slug' => 'envio-y-distribucion',
-      'meta_title' => 'Envío y distribución',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'shipment-and-distribution',
-      'meta_title' => 'Shipment and Distribution',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'logistic-optimization' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'logistics',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'logistic-optimization',
-    'es' => [
-      'slug' => 'optimizacion-logistica',
-      'meta_title' => 'Optimización logística',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'logistic-optimization',
-      'meta_title' => 'Logistic Optimization',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  'operation-consulting' => [
-    'isActive' => false,
-    'category' => 'services',
-    'subcategory' => 'logistics',
-    'icon' => 'gear',
-    'template' => 'service-type-1',
-    'content_file' => 'operation-consulting',
-    'es' => [
-      'slug' => 'consultoria-operativa',
-      'meta_title' => 'Consultoría operativa',
-      'meta_description' => 'Descripción SEO',
-    ],
-    'en' => [
-      'slug' => 'operation-consulting',
-      'meta_title' => 'Operation Consulting',
-      'meta_description' => 'SEO description',
-    ],
-  ],
-
-  // ECOSYSTEM CATEGORY (no subcategories)
-  'crea' => [
+  'onboarding' => [
     'isActive' => true,
-    'category' => 'ecosystem',
+    'hasCard' => true,
+    'category' => 'services',
+    'subcategory' => 'hr',
+    'icon' => 'web3-service-main',
+    'image' => 'onboarding.webp',
+    'home_description' => Language::trans('home.service_description.onboarding'),
     'template' => 'service-type-1',
-    'content_file' => 'crea',
+    'content_file' => 'aplicaciones-web3',
     'es' => [
-      'slug' => 'crea',
-      'meta_title' => 'CREA',
-      'meta_description' => 'Descripción SEO del ecosistema 1',
+      'slug' => 'onboarding-seguimiento-desarrollo',
+      'meta_title' => 'Onboarding, seguimiento y desarrollo',
+      'meta_description' => 'Descripción SEO',
     ],
     'en' => [
-      'slug' => 'crea',
-      'meta_title' => 'CREA',
-      'meta_description' => 'SEO description of ecosystem 1',
+      'slug' => 'onboarding-tracking-development',
+      'meta_title' => 'Onboarding, Tracking and Development',
+      'meta_description' => 'SEO description',
     ],
   ],
 
-  'exchange' => [
+  'daily-attention' => [
     'isActive' => true,
-    'category' => 'ecosystem',
+    'hasCard' => true,
+    'category' => 'services',
+    'subcategory' => 'hr',
+    'icon' => 'dbsecure-service-main',
+    'image' => 'atencion.webp',
+    'home_description' => Language::trans('home.service_description.attention'),
     'template' => 'service-type-1',
-    'content_file' => 'exchange',
+    'content_file' => 'bases-datos-seguras',
     'es' => [
-      'slug' => 'exchange',
-      'meta_title' => 'Exchange',
-      'meta_description' => 'Descripción SEO del ecosistema 2',
+      'slug' => 'atencion-diaria-a-tu-equipo',
+      'meta_title' => 'Atención diaria a tu equipo',
+      'meta_description' => 'Descripción SEO',
     ],
     'en' => [
-      'slug' => 'exchange',
-      'meta_title' => 'Exchange',
-      'meta_description' => 'SEO description of ecosystem 2',
+      'slug' => 'daily-attention-to-your-team',
+      'meta_title' => 'Daily Attention to Your Team',
+      'meta_description' => 'SEO description',
     ],
   ],
 
-  'law' => [
+  'evaluation-performance' => [
     'isActive' => true,
-    'category' => 'ecosystem',
+    'hasCard' => true,
+    'category' => 'services',
+    'subcategory' => 'hr',
+    'icon' => 'tokenization-service-main',
+    'image' => 'evaluacion.webp',
+    'home_description' => Language::trans('home.service_description.evaluation'),
     'template' => 'service-type-1',
-    'content_file' => 'law',
+    'content_file' => 'tokenizacion-proyectos',
     'es' => [
-      'slug' => 'law',
-      'meta_title' => 'Law',
-      'meta_description' => 'Descripción SEO del ecosistema 3',
+      'slug' => 'evaluacion-y-desempeno',
+      'meta_title' => 'Evaluación y desempeño',
+      'meta_description' => 'Descripción SEO',
     ],
     'en' => [
-      'slug' => 'law',
-      'meta_title' => 'Law',
-      'meta_description' => 'SEO description of ecosystem 3',
+      'slug' => 'evaluation-and-performance',
+      'meta_title' => 'Evaluation and Performance',
+      'meta_description' => 'SEO description',
     ],
   ],
-
-  'payments' => [
+  'salaries-growth' => [
     'isActive' => true,
-    'category' => 'ecosystem',
+    'hasCard' => true,
+    'category' => 'services',
+    'subcategory' => 'hr',
+    'icon' => 'tokenization-service-main',
+    'image' => 'sueldos.webp',
+    'home_description' => Language::trans('home.service_description.salaries'),
     'template' => 'service-type-1',
-    'content_file' => 'payments',
+    'content_file' => 'tokenizacion-proyectos',
     'es' => [
-      'slug' => 'payments',
-      'meta_title' => 'Payments',
-      'meta_description' => 'Descripción SEO del ecosistema 4',
+      'slug' => 'sueldos-y-crecimiento-ordenados',
+      'meta_title' => 'Sueldos y crecimiento ordenados',
+      'meta_description' => 'Descripción SEO',
     ],
     'en' => [
-      'slug' => 'payments',
-      'meta_title' => 'Payments',
-      'meta_description' => 'SEO description of ecosystem 4',
+      'slug' => 'organized-salaries-and-growth',
+      'meta_title' => 'Organized Salaries and Growth',
+      'meta_description' => 'SEO description',
     ],
   ],
-
-  'talent' => [
+  'wellbeing-support' => [
     'isActive' => true,
-    'category' => 'ecosystem',
+    'hasCard' => true,
+    'category' => 'services',
+    'subcategory' => 'hr',
+    'icon' => 'tokenization-service-main',
+    'image' => 'bienestar.webp',
+    'home_description' => Language::trans('home.service_description.wellbeing'),
     'template' => 'service-type-1',
-    'content_file' => 'talent',
+    'content_file' => 'tokenizacion-proyectos',
     'es' => [
-      'slug' => 'talent',
-      'meta_title' => 'Talent',
-      'meta_description' => 'Descripción SEO del ecosistema 5',
+      'slug' => 'bienestar-y-contencion-profesional',
+      'meta_title' => 'Bienestar y contención profesional',
+      'meta_description' => 'Descripción SEO',
     ],
     'en' => [
-      'slug' => 'talent',
-      'meta_title' => 'Talent',
-      'meta_description' => 'SEO description of ecosystem 5',
+      'slug' => 'professional-well-being-and-support',
+      'meta_title' => 'Professional Well-being and Support',
+      'meta_description' => 'SEO description',
     ],
   ],
-
-  'corpsyte' => [
+  'psychological-support' => [
     'isActive' => true,
-    'category' => 'ecosystem',
+    'hasCard' => true,
+    'category' => 'services',
+    'subcategory' => 'hr',
+    'icon' => 'tokenization-service-main',
+    'image' => 'acompanamiento.webp',
+    'home_description' => Language::trans('home.service_description.psychological'),
     'template' => 'service-type-1',
-    'content_file' => 'corpsyte',
+    'content_file' => 'tokenizacion-proyectos',
     'es' => [
-      'slug' => 'corpsyte',
-      'meta_title' => 'Corpsyte',
-      'meta_description' => 'Descripción SEO del ecosistema 6',
+      'slug' => 'acompanamiento-psicologico',
+      'meta_title' => 'Acompañamiento psicológico',
+      'meta_description' => 'Descripción SEO',
     ],
     'en' => [
-      'slug' => 'corpsyte',
-      'meta_title' => 'Corpsyte',
-      'meta_description' => 'SEO description of ecosystem 6',
+      'slug' => 'psychological-support',
+      'meta_title' => 'Psychological Support',
+      'meta_description' => 'SEO description',
     ],
   ],
-
-  'logistics' => [
+  'consulting-founders' => [
     'isActive' => true,
-    'category' => 'ecosystem',
+    'hasCard' => true,
+    'category' => 'services',
+    'subcategory' => 'hr',
+    'icon' => 'tokenization-service-main',
+    'image' => 'consultoria.webp',
+    'home_description' => Language::trans('home.service_description.consulting'),
     'template' => 'service-type-1',
-    'content_file' => 'logistics',
+    'content_file' => 'tokenizacion-proyectos',
     'es' => [
-      'slug' => 'logistics',
-      'meta_title' => 'Logistics',
-      'meta_description' => 'Descripción SEO del ecosistema 6',
+      'slug' => 'consultoria-para-fundadores-y-directores',
+      'meta_title' => 'Consultoría para fundadores y directores',
+      'meta_description' => 'Descripción SEO',
     ],
     'en' => [
-      'slug' => 'logistics',
-      'meta_title' => 'Logistics',
-      'meta_description' => 'SEO description of ecosystem 6',
+      'slug' => 'consulting-for-founders-and-directors',
+      'meta_title' => 'Consulting for Founders and Directors',
+      'meta_description' => 'SEO description',
     ],
   ],
-
-  // IPs CATEGORY (no subcategories)
-    'backoffice' => [
-    'isActive' => false,
-    'inNav' => false,
-    'category' => 'ips',
-    'template' => 'service-type-2',
-    'content_file' => 'backoffice',
-    'es' => [
-      'slug' => 'backoffice',
-      'meta_title' => 'Backoffice',
-      'meta_description' =>  Language::trans('ips.backoffice'),
-    ],
-    'en' => [
-      'slug' => 'backoffice',
-      'meta_title' => 'Backoffice',
-      'meta_description' =>  Language::trans('ips.backoffice'),
-    ],
-  ],
-
-  'blockchain' => [
+  'labor-relations' => [
     'isActive' => true,
-    'inNav' => false,
-    'category' => 'ips',
-    'template' => 'service-type-2',
-    'content_file' => 'blockchain',
+    'hasCard' => true,
+    'category' => 'services',
+    'subcategory' => 'hr',
+    'icon' => 'tokenization-service-main',
+    'image' => 'manejo.webp',
+    'home_description' => Language::trans('home.service_description.relations'),
+    'template' => 'service-type-1',
+    'content_file' => 'tokenizacion-proyectos',
     'es' => [
-      'slug' => 'blockchain',
-      'meta_title' => 'Blockchain',
-      'meta_description' => Language::trans('ips.blockchain'),
+      'slug' => 'manejo-de-relaciones-laborales-y-bajas',
+      'meta_title' => 'Manejo de relaciones laborales y bajas',
+      'meta_description' => 'Descripción SEO',
     ],
     'en' => [
-      'slug' => 'blockchain',
-      'meta_title' => 'Blockchain',
-      'meta_description' => Language::trans('ips.blockchain'),
+      'slug' => 'labor-relations-and-leave-management',
+      'meta_title' => 'Labor Relations and Leave Management',
+      'meta_description' => 'SEO description',
     ],
   ],
-
-  'tokenization' => [
+  'labor-law' => [
     'isActive' => true,
-    'inNav' => false,
-    'category' => 'ips',
-    'template' => 'service-type-2',
-    'content_file' => 'tokenization',
+    'hasCard' => true,
+    'category' => 'services',
+    'subcategory' => 'hr',
+    'icon' => 'tokenization-service-main',
+    'image' => 'legal.webp',
+    'home_description' => Language::trans('home.service_description.law'),
+    'template' => 'service-type-1',
+    'content_file' => 'tokenizacion-proyectos',
     'es' => [
-      'slug' => 'tokenization',
-      'meta_title' => 'Tokenization',
-      'meta_description' => Language::trans('ips.tokenization'),
+      'slug' => 'legal-laboral',
+      'meta_title' => 'Legal-Laboral',
+      'meta_description' => 'Descripción SEO',
     ],
     'en' => [
-      'slug' => 'tokenization',
-      'meta_title' => 'Tokenization',
-      'meta_description' => Language::trans('ips.tokenization'),
+      'slug' => 'labor-law',
+      'meta_title' => 'Labor Law',
+      'meta_description' => 'SEO description',
     ],
-  ],
-
-  'otc' => [
-    'isActive' => true,
-    'inNav' => false,
-    'category' => 'ips',
-    'template' => 'service-type-2',
-    'content_file' => 'otc',
-    'es' => [
-      'slug' => 'exchange-otc',
-      'meta_title' => 'Exchange OTC',
-      'meta_description' => Language::trans('ips.exchange'),
-    ],
-    'en' => [
-      'slug' => 'exchange-otc',
-      'meta_title' => 'Exchange OTC',
-      'meta_description' => Language::trans('ips.exchange'),
-    ],
-  ],
-
-  'processing' => [
-    'isActive' => true,
-    'inNav' => false,
-    'category' => 'ips',
-    'template' => 'service-type-2',
-    'content_file' => 'processing',
-    'es' => [
-      'slug' => 'payment-processing',
-      'meta_title' => 'Payment Processing',
-      'meta_description' => Language::trans('ips.processing'),
-    ],
-    'en' => [
-      'slug' => 'payment-processing',
-      'meta_title' => 'Payment Processing',
-      'meta_description' => Language::trans('ips.processing'),
-    ],
-  ],
-
-  'wallet' => [
-    'isActive' => true,
-    'inNav' => false,
-    'category' => 'ips',
-    'template' => 'service-type-2',
-    'content_file' => 'wallet',
-    'es' => [
-      'slug' => 'wallet',
-      'meta_title' => 'Wallet',
-      'meta_description' => Language::trans('ips.wallet'),
-    ],
-    'en' => [
-      'slug' => 'wallet',
-      'meta_title' => 'Wallet',
-      'meta_description' => Language::trans('ips.wallet'),
-    ],
-  ],
-
-  'metaverse' => [
-    'isActive' => false,
-    'inNav' => true,
-    'category' => 'ips',
-    'template' => 'service-type-2',
-    'content_file' => 'metaverse',
-    'es' => [
-      'slug' => 'metaverso',
-      'meta_title' => 'Metaverso, VR y XR',
-      'meta_description' => Language::trans('ips.metaverse'),
-    ],
-    'en' => [
-      'slug' => 'metaverse',
-      'meta_title' => 'Metaverse, VR and XR',
-      'meta_description' => Language::trans('ips.metaverse'),
-    ],
-  ],
+  ]
 ];

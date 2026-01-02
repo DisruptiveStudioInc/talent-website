@@ -14,7 +14,7 @@
     ?>
       <li>
         <?php if ($lang === $currentLang): ?>
-          <span class="block text-center p-2 rounded-sm bg-brand-100 text-white">
+          <span class="block text-center p-2 rounded-sm bg-brand-100 text-secondary-100">
             <?= $config['languages']['names'][$lang] ?>
           </span>
         <?php else: ?>

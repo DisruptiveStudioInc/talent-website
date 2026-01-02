@@ -56,9 +56,9 @@
   --color-white: oklch(100% 0.0001 259.98);
   --color-black: oklch(0% 0 0);
 
-  --color-brand-50: oklch(0.668 0.243 277.1); /*#9671FF*/
-  --color-brand-100: oklch(0.566 0.263 278.9); /*#6937FF*/
-  --color-brand-200: oklch(0.525 0.239 278.7); /*#5B2CE9*/
+  --color-brand-50: #80dcf5;
+  --color-brand-100: #37d9f4;
+  --color-brand-200: #0cb7d4;
 
   --color-secondary-50: oklch(0.372 0.045 259.1); /*#2F3A5E*/
   --color-secondary-100: oklch(0.312 0.045 259.2); /*#23274E*/
@@ -193,7 +193,7 @@
     align-items: center;
     padding: --spacing(2.5) --spacing(4);
     background-color: var(--color-brand-100);
-    color: var(--color-white);
+    color: var(--color-secondary-100);
     box-shadow: var(--shadow-lg);
     cursor: pointer;
     scale: 100%;
@@ -203,6 +203,7 @@
 
     &:hover {
       background-color: var(--color-brand-200);
+      color: var(--color-white);
       scale: 101%;
     }
 

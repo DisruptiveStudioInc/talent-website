@@ -5,7 +5,7 @@ namespace App\Models;
 class Language
 {
   private static ?array $translations = null;
-  private static string $currentLanguage = 'en';
+  private static string $currentLanguage = 'es';
 
   public static function setLanguage(string $lang): void
   {
@@ -27,7 +27,7 @@ class Language
     $file = __DIR__ . "/../../lang/" . self::$currentLanguage . ".php";
 
     if (!file_exists($file)) {
-      $file = __DIR__ . "/../../lang/en.php"; // Fallback to English
+      $file = __DIR__ . "/../../lang/es.php"; // Fallback to English
     }
 
     self::$translations = require $file;

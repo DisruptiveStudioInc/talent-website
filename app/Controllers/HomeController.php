@@ -14,17 +14,11 @@ class HomeController extends BaseController
     $pageContent = $this->loadPageContent('home');
 
     // Get all services for displaying in home page if needed
-    $services = Service::getAll($this->language);
-    $ecosystem = Service::getByCategory('ecosystem', $this->language);
-    $subcatServices = getServiceSubcategoryName($this->language);
-    $disrIps = Service::getByCategory('ips', $this->language);
+    $services = Service::getAllForCards($this->language);
 
     return $this->view('home', [
       'content' => $pageContent,
       'services' => $services,
-      'ecosystem' => $ecosystem,
-      'subcategories' => $subcatServices,
-      'ips' => $disrIps,
       'hasSnapScroll' => true,
       'hasTextTexture' => true,
       'metaDescription' => $pageContent['seoDescription'] ?? null

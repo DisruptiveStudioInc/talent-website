@@ -12,7 +12,7 @@
         </li>
       <?php # endforeach; ?>
     </ul>
-    <small>&copy; <?= date("Y") ?> Disruptive Studio, Inc. All rights reserved</small>
+    <small>&copy; <?= date("Y") ?> Disruptive Talent, Inc. All rights reserved</small>
   </div>
   <div class="p-7 border-t border-secondary-50 text-center">
     <small><?= $trans('footer.legal_small') ?></small>

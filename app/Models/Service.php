@@ -80,6 +80,27 @@ class Service
     return empty($result) ? 'no_services' : $result;
   }
 
+  public static function getAllForCards(string $language): array|string
+  {
+    self::loadServices();
+
+    $result = [];
+    foreach (self::$services as $key => $service) {
+      if (isset($service[$language]) && self::isServiceActive($service)) {
+        $result[] = [
+          'key' => $key,
+          'category' => $service['category'] ?? 'services',
+          'template' => $service['template'],
+          'image' => $service['image'] ?? null,
+          'home_description' => $service['home_description'] ?? null,
+          'meta' => $service[$language]
+        ];
+      }
+    }
+
+    return empty($result) ? 'no_services' : $result;
+  }
+
   public static function getByCategory(string $category, string $language): array|string
   {
     self::loadServices();
@@ -127,7 +148,7 @@ class Service
 
   public static function getCategories(): array
   {
-    return ['services', 'ecosystem', 'ips'];
+    return ['services'];
   }
 
   public static function getServiceSubcategories(): array
