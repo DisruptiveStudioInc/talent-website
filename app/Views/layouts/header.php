@@ -101,7 +101,7 @@
         <!-- Language switcher -->
         <?php include(__DIR__.'/../components/langSwitcherIcon.php') ?>
 
-        <a href="https://wa.me/+14088584504" target="_blank" rel="noopener noreferrer" class="flex-center p-1.5 rounded-full bg-green-400 hover:bg-green-700 active:bg-green-700">
+        <a href="https://wa.me/<?= $constants['contact_info']['wame'] ?>" target="_blank" rel="noopener noreferrer" class="flex-center p-1.5 rounded-full bg-green-400 hover:bg-green-700 active:bg-green-700">
           <svg class="size-7 text-white transition-colors"><use href="#whatsapp"/></svg>
         </a>
       </div>

@@ -207,14 +207,14 @@ include __DIR__ . '/../components/sideDotsNavigation.php';
       </div>
       <ul id="disr-verticals" class="[--radius:380px] max-lg:grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-5" style="--total:<?= count($content['ecosystem']); ?>">
         <?php foreach($content['ecosystem'] as $k => $item): ?>
-          <li class="disr-vertical lg:absolute lg:top-1/2 lg:left-1/2 max-lg:transform-none hover:z-3" style="--i:<?= $k+1; ?>
+          <li class="disr-vertical lg:absolute lg:top-1/2 lg:left-1/2 max-lg:transform-none md:max-lg:last:translate-x-[calc(100%_+_--spacing(5))] xs:max-md:last:translate-x-[calc(50%_+_--spacing(2.5))] hover:z-3" style="--i:<?= $k+1; ?>
             <?= ($k === 0 || $k === 3 || $k === 4) ? ';--r-alt:-60px' : '' ?>"
           >
             <span
-              class="block <?= $k === 3 ? 'lg:translate-x-2' : '' ?> <?= $k === 4 ? 'lg:-translate-x-2' : '' ?>"
+              class="block h-full lg:h-auto <?= $k === 3 ? 'lg:translate-x-5' : '' ?> <?= $k === 4 ? 'lg:-translate-x-5' : '' ?>"
             >
-              <div class="bg-white rounded-2xl px-5 py-4 lg:p-6 drop-shadow-lg drop-shadow-grey-100/10 origin-center hover:ring-3 ring-brand-100 transition-shadow">
-                <p class="text-xl"><?= $item ?></p>
+              <div class="flex items-center justify-center bg-white rounded-2xl h-full px-5 py-4 lg:py-0 lg:px-4 drop-shadow-lg drop-shadow-grey-100/10 origin-center hover:ring-3 ring-brand-100 transition-shadow lg:w-64 lg:h-19">
+                <p class="text-center text-xl lg:text-2xl leading-tight font-bold"><?= $item ?></p>
               </div>
             </span>
           </li>
