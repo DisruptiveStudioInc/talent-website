@@ -10,7 +10,7 @@ const heroSwiper = new Swiper("#hero-swiper", {
   loop: true,
   initialSlide: 4,
   autoplay: {
-    delay: 1200,
+    delay: 6000,
   },
 });
 
