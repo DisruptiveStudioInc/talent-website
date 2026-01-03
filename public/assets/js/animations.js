@@ -85,13 +85,13 @@ document.fonts.ready.then(() => {
   if (wordsWhiteEls.length > 0) {
     gsap.utils.toArray(".slide-up-words-white").forEach((element) => {
       const t = element.className.includes("big-tilde")
-        ? "lg:es:pt-7 lg:es:-mt-7"
-        : "";
+        ? "pt-2 sm:pt-3 lg:es:pt-7 lg:es:-mt-4"
+        : "pt-2";
       SplitText.create(element, {
         type: "words",
         autoSplit: true,
         smartWrap: true,
-        wordsClass: `bg-clip-text bg-text-white pt-2 ${t} word++`,
+        wordsClass: `bg-clip-text bg-text-white ${t} word++`,
         onSplit: (self) => {
           return gsap.from(self.words, {
             yPercent: 20,

@@ -16,7 +16,7 @@
   </div>
   <div class="p-7 border-t border-secondary-50 text-center">
     <small><?= $trans('footer.legal_small') ?></small>
-    <small class="block"><a target="_blank" href="https://www.comparasoftware.com/software-de-mlm"><?= $trans('footer.affiliate_brand') ?></a> <?= $trans('footer.affiliate_text') ?> <a href="https://www.comparasoftware.com/afiliados"> <?= $trans('footer.affiliate_name') ?></a></small>
+    <!-- <small class="block"><a target="_blank" href="https://www.comparasoftware.com/software-de-mlm"><?= $trans('footer.affiliate_brand') ?></a> <?= $trans('footer.affiliate_text') ?> <a href="https://www.comparasoftware.com/afiliados"> <?= $trans('footer.affiliate_name') ?></a></small> -->
   </div>
   <?php require_once __DIR__ .'/../components/svgSprites.php'; ?>
 </footer>

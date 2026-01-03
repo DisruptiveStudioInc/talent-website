@@ -127,7 +127,7 @@ return[
     [
       'name' => 'Lizbeth',
       'job' => Language::trans('home.team_jobs.client_manager'),
-      'description' => Language::trans('home.team_description.eli'),
+      'description' => Language::trans('home.team_description.lizbeth'),
       'image' => 'lizbeth.webp'
     ],
     [
@@ -151,17 +151,17 @@ return[
   ],
   'stats' => [
     [
-      'number' => '7+',
+      'number' => '15+',
       'title' => Language::trans('home.statistics.list.item1.feature'),
       'text' => Language::trans('home.statistics.list.item1.text')
     ],
     [
-      'number' => '16+',
+      'number' => '5K+',
       'title' => Language::trans('home.statistics.list.item2.feature'),
       'text' => Language::trans('home.statistics.list.item2.text')
     ],
     [
-      'number' => '100+',
+      'number' => '10K+',
       'title' => Language::trans('home.statistics.list.item3.feature'),
       'text' => Language::trans('home.statistics.list.item3.text')
     ],
@@ -171,12 +171,12 @@ return[
       'text' => Language::trans('home.statistics.list.item4.text')
     ],
     [
-      'number' => '500+',
+      'number' => '22+',
       'title' => Language::trans('home.statistics.list.item5.feature'),
       'text' => Language::trans('home.statistics.list.item5.text')
     ],
     [
-      'number' => '1b+',
+      'number' => '1M+',
       'title' => Language::trans('home.statistics.list.item6.feature'),
       'text' => Language::trans('home.statistics.list.item6.text')
     ]

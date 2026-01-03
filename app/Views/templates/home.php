@@ -142,7 +142,7 @@ include __DIR__ . '/../components/sideDotsNavigation.php';
   <span class="absolute top-0 left-0 size-0" id="essence"></span>
   <?php generateBackground('dark',3); ?>
   <div class="block-content min-h-dvh py-16 lg:py-40 flex items-center">
-    <h2 class="banner-text font-title leading-none uppercase text-[12vw] md:text-10xl lg:text-[7rem] slide-up-words-white big-tilde"><?= $trans('home.we_are') ?></h2>
+    <h2 class="banner-text font-title leading-none uppercase text-[7vw] lg:text-[8vw] xl:text-[6.2vw] slide-up-words-white big-tilde"><?= $trans('home.we_are') ?></h2>
   </div>
 </section>
 
@@ -221,8 +221,6 @@ include __DIR__ . '/../components/sideDotsNavigation.php';
         <?php endforeach; ?>
       </ul>
     </div>
-
-    <p class="font-bold text-center text-xl sm:text-3xl lg:text-5xl text-secondary-200"><?= $trans('home.ecosystem.big') ?></p>
   </div>
 </section>
 

@@ -203,7 +203,8 @@ return [
       'paola_duarte' => 'Coordinates the daily execution of the supply chain, ensuring accuracy, speed, and complete control.',
       'diego_arevalo' => "Defines commercial strategies and aligns sales objectives with the company's strategic goals.",
       'ana' => 'Designs legal and contractual frameworks that ensure growth, protection, and operational stability.',
-      'jose_maria' => 'Coordinates audiovisual execution with a focus on efficiency, storytelling, and creative return.'
+      'jose_maria' => 'Coordinates audiovisual execution with a focus on efficiency, storytelling, and creative return.',
+      'lizbeth' => 'Connects strategy, execution, and customer experience.'
     ],
     'statistics' => [
       'title' => 'Every number is a success story',
@@ -292,7 +293,7 @@ return [
     ],
     'certifications' => [
       'title' => 'Certifications',
-      'text' => "Over 40 certifications"
+      'text' => "Over 30 certifications"
     ]
   ],
 

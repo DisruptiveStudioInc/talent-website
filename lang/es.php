@@ -203,7 +203,8 @@ return [
       'paola_duarte' => 'Coordina la ejecución diaria de la cadena de suministro, garantizando precisión, velocidad y control total.',
       'diego_arevalo' => 'Define estrategias comerciales y alinea objetivos de venta con las metas estratégicas del negocio.',
       'ana' => 'Diseña marcos legales y contractuales que aseguran crecimiento, protección y estabilidad operativa.',
-      'jose_maria' => 'Coordina la ejecución audiovisual con enfoque en eficiencia, storytelling y retorno creativo.'
+      'jose_maria' => 'Coordina la ejecución audiovisual con enfoque en eficiencia, storytelling y retorno creativo.',
+      'lizbeth' => 'Conecta estrategia, ejecución y experiencia del cliente.'
     ],
     'statistics' => [
       'title' => 'Cada número es una historia de éxito',
@@ -292,7 +293,7 @@ return [
     ],
     'certifications' => [
       'title' => 'Certificaciones',
-      'text' => 'Más de 40 certificaciones'
+      'text' => 'Más de 30 certificaciones'
     ]
   ],
 
