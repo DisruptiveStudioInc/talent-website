@@ -88,12 +88,12 @@ return[
     ]
   ],
   'team_members' => [
-    [
-      'name' => 'Eduardo',
-      'job' => Language::trans('home.team_jobs.ceo'),
-      'description' => Language::trans('home.team_description.lalo'),
-      'image' => 'lalo.webp'
-    ],
+    // [
+    //   'name' => 'Eduardo',
+    //   'job' => Language::trans('home.team_jobs.ceo'),
+    //   'description' => Language::trans('home.team_description.lalo'),
+    //   'image' => 'lalo.webp'
+    // ],
     [
       'name' => 'Mauxi',
       'job' => Language::trans('home.team_jobs.hr_operations_lead'),
@@ -106,12 +106,12 @@ return[
       'description' => Language::trans('home.team_description.daniel'),
       'image' => 'daniel_cruz.webp'
     ],
-    [
-      'name' => 'Ilyra',
-      'job' => Language::trans('home.team_jobs.hr_tech_lead'),
-      'description' => Language::trans('home.team_description.ilyra'),
-      'image' => 'ilyra.webp'
-    ],
+    // [
+    //   'name' => 'Ilyra',
+    //   'job' => Language::trans('home.team_jobs.hr_tech_lead'),
+    //   'description' => Language::trans('home.team_description.ilyra'),
+    //   'image' => 'ilyra.webp'
+    // ],
     [
       'name' => 'Ana',
       'job' => Language::trans('home.team_jobs.legal_advisor'),
