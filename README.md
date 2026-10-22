@@ -1098,11 +1098,21 @@ chmod -R 755 /var/www/html
 
 ### Docker Production
 
-Use the provided Docker configuration:
+The application uses Apache with PHP 8.3.36, pinned in `Dockerfile`. This release fixes
+[CVE-2026-109618 and CVE-2026-109619](https://www.php.net/archive/2026.php#2026-10-21-5).
+Local Compose builds this Dockerfile; production deployments using it receive the same PHP version.
+
+After changing the PHP image, rebuild and recreate the application container in each environment:
 
 ```bash
-docker-compose up -d
+docker compose build --pull disruptive-studio-website
+docker compose up -d --no-deps --force-recreate disruptive-studio-website
+docker compose exec disruptive-studio-website php -v
 ```
+
+Verify that the running container reports PHP 8.3.36. A container restart alone does not update PHP.
+If production is managed by a deployment platform, rebuild from the updated Dockerfile and redeploy,
+then verify PHP inside the running production container. Keep the pinned image updated for future security releases.
 
 For production, consider:
 

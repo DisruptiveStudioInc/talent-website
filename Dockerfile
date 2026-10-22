@@ -1,4 +1,5 @@
-FROM php:8.3-apache
+# PHP 8.3.36 fixes CVE-2026-109618 and CVE-2026-109619.
+FROM php:8.3.36-apache
 
 # Herramientas y headers para compilar extensiones PHP
 RUN apt-get update && apt-get install -y --no-install-recommends \
